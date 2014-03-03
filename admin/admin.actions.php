@@ -118,11 +118,11 @@ function pagelines_check_folders() {
 
 		$folder = basename( get_template_directory() );
 
-		if( 'dms' == $folder )
+		if( 'thesignals' == $folder )
 			return;
 
 		echo '<div class="updated">';
-		printf( "<p><h3>Install Error!</h3><br />PageLines DMS must be installed in a folder called 'dms' to work with child themes and extensions.<br /><br />Current path: %s<br /></p>", get_template_directory() );
+		printf( "<p><h3>Install Error!</h3><br />PageLines 'The Signals' must be installed in a folder called 'thesignals' to work with child themes and extensions.<br /><br />Current path: %s<br /></p>", get_template_directory() );
 		echo '</div>';
 }
 
