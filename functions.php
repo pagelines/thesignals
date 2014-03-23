@@ -5,11 +5,14 @@
 if( ! defined( 'DMS_CORE' ) )
 	define( 'DMS_CORE', true );
 
+
 require_once( 'dms/functions.php' );
 
-// Lets suggest a few plugins..
-dms_suggest_plugin( 'Contact Form 7', 'contact-form-7', 'Contact Form 7 can manage multiple contact forms, plus you can customize the form and the mail contents flexibly with simple markup.<br />The form supports Ajax-powered submitting, CAPTCHA, Akismet spam filtering and so on.' );
+add_action( 'wp_enqueue_scripts', 'thesignals_register_js' );
+function thesignals_register_js(){
+	wp_enqueue_script( 'windows', PL_THEME_URL.'/js/windows.js', array('jquery'), PL_CORE_VERSION, true );
+	wp_enqueue_script( 'thesignals', PL_THEME_URL.'/js/thesignals.js', array('jquery'),  PL_CORE_VERSION, true );	
+}
 
-dms_suggest_plugin( 'WordPress SEO', 'wordpress-seo', 'Improve your WordPress SEO: Write better content and have a fully optimized WordPress site using the WordPress SEO plugin by Yoast.' );
 
-dms_suggest_plugin( 'WooCommerce - excelling eCommerce', 'woocommerce', 'WooCommerce is a powerful, extendable eCommerce plugin that helps you sell anything. Beautifully.' );
+
