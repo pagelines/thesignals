@@ -1,3 +1,6 @@
 [submodule "dms"]
 	path = dms
 	url = git@github.com:pagelines/DMS.git
+[submodule "sections/masonic"]
+	path = sections/masonic
+	url = git@github.com:pagelines/masonic.git
