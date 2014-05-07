@@ -1,4 +1,46 @@
+.move-up-down {
+  -webkit-animation: up-down 2s infinite ease;
+  -moz-animation: up-down 2s infinite ease;
+  animation: up-down 2s infinite ease;
+}
+
+@-moz-keyframes up-down {
+	0% { -moz-transform: translate3d(0, -3px, 0); }
+	50% { -moz-transform: translate3d(0, 3px, 0); }
+  	100% { -moz-transform: translate3d(0, -3px, 0); }
+}
+@-webkit-keyframes up-down {
+  	0% { -webkit-transform: translate3d(0, -3px, 0); }
+	50% { -webkit-transform: translate3d(0, 3px, 0); }
+  	100% { -webkit-transform: translate3d(0, -3px, 0); }
+}
+
+@keyframes up-down {
+  	0% { transform: translate3d(0, -3px, 0); }
+	50% { transform: translate3d(0, 3px, 0); }
+  	100% { transform: translate3d(0, -3px, 0); }
+}
+
+
 .section-starfield {
+	.more-info{
+		vertical-align: top; 
+		position: absolute; 
+		bottom: 0;
+		width: 100%; 
+		text-align: center;
+		.follow-us{
+			opacity: .7;
+			&:hover{
+				opacity: 1;
+			}
+		}
+		.scroll-for-more span{
+			display: block;
+			font-size: 20px;
+			margin-top: 10px;
+		}
+	}
 	.starfield-container{
 		position: relative;
 		height: 500px;
@@ -14,8 +56,8 @@
 			
 		}
 		.sigs-icons{
-			position: absolute; 
-			bottom: 10px;
+		
+			
 			font-size: 40px;
 			margin: 20px 0 0;
 			width: 100%; 
