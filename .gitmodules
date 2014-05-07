@@ -4,3 +4,6 @@
 [submodule "sections/masthead"]
 	path = sections/masthead
 	url = git@github.com:pagelines/masthead.git
+[submodule "dms"]
+	path = dms
+	url = git@github.com:pagelines/DMS.git
