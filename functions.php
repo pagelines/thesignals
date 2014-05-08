@@ -13,7 +13,7 @@ function thesignals_register_js(){
 	wp_enqueue_script( 'thesignals', PL_THEME_URL.'/js/thesignals.js', array('jquery'),  PL_CORE_VERSION, true );	
 }
 
-add_action( 'wp_head', 'thesignals_stratus_bar' );
+//add_action( 'wp_head', 'thesignals_stratus_bar' );
 function thesignals_stratus_bar(){
 	?>
 	<script type="text/javascript" src="http://stratus.sc/stratus.js"></script>
