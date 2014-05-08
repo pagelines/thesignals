@@ -91,7 +91,7 @@ class PageLinesStarfield extends PageLinesSection {
 				echo do_shortcode('[twitter_button type="follow"]');
 				?>
 				</div>
-				<div class="scroll-for-more move-up-down"><span class="scroll-tag-icon"><i class="icon-caret-down icon"></i></span></div>
+				<div class="scroll-for-more"><span class="scroll-tag-icon"><i class="icon-caret-down icon"></i></span></div>
 			</div>
 			
 		</div>
