@@ -71,24 +71,28 @@ class PageLinesStarfield extends PageLinesSection {
 			<div class="starfield ">	</div>
 			<div class="pl-area-wrap starfield-content">
 				<div class="pl-animation-group">
-					<div class="sigs-image pl-animation pla-from-top"><img src="<?php echo $this->base_url.'/thesignals.png'; ?>"></div>
-					<div class="sigs-text pl-animation pla-from-top">Be Excellent To Each Other</div>
+					<div class="sigs-image pl-animation pla-scale"><img src="<?php echo $this->base_url.'/thesignals.png'; ?>"></div>
+					<div class="sigs-text">
+						<span class="pl-animation pla-from-bottom">Be</span> 
+						<span class="pl-animation pla-from-bottom">Excellent</span> 
+						<span class="pl-animation pla-from-bottom">To</span>  
+						<span class="pl-animation pla-from-bottom">Each</span>  
+						<span class="pl-animation pla-from-bottom">Other</span> 
+					</div>
 				</div>
 				
 				<div class="sigs-icons pl-animation-group">
-					<a target="_blank" class="sigs-icon pl-animation pla-from-top subtle" href="http://www.facebook.com/itsthesignals"><i class="icon icon-facebook-square"></i></a>
+					<!-- <a target="_blank" class="sigs-icon pl-animation pla-from-top subtle" href="http://www.facebook.com/itsthesignals"><i class="icon icon-facebook-square"></i></a>
 					
-					<a target="_blank" class="sigs-icon pl-animation pla-from-top subtle" href="http://www.youtube.com/user/itsthesignals"><i class="icon icon-youtube-square"></i></a>
-					<a target="_blank" class="sigs-icon pl-animation pla-from-top subtle" href="http://www.twitter.com/itsthesignals"><i class="icon icon-twitter-square"></i></a>
 					<a target="_blank" class="sigs-icon pl-animation pla-from-top subtle" href="http://www.soundcloud.com/itsthesignals"><i class="icon icon-cloud"></i></a>
-					
+					-->
 				</div>
 			</div>
 			<div class="more-info">
 				<div class="follow-us">
 				<?php
 				echo do_shortcode( sprintf( '[like_button url="http://www.facebook.com/%s"]', 'itsthesignals' ));
-				echo do_shortcode('[twitter_button type="follow"]');
+			//	echo do_shortcode('[twitter_button type="follow"]');
 				?>
 				</div>
 				<div class="scroll-for-more"><span class="scroll-tag-icon"><i class="icon-caret-down icon"></i></span></div>
